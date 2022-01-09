@@ -1,0 +1,27 @@
+import React from "react";
+import { View, Text, StyleSheet, Button } from "react-native";
+import { AuthNavProps } from "../AuthParamList";
+
+interface LoginProps extends AuthNavProps<"Login"> {}
+
+export const Login: React.FC<LoginProps> = ({ navigation }) => {
+  return (
+    <View style={styles.container}>
+      <Text>This is a login screen</Text>
+      <Button
+        title="Sign Up"
+        onPress={() => {
+          navigation.navigate("Register");
+        }}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
