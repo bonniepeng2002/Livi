@@ -1,4 +1,4 @@
-import AsyncStorage from "@react-native-community/async-storage";
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import React, { ReactNode, useState } from "react";
 
 type User = null | { username: string };
