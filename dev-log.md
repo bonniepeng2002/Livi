@@ -6,7 +6,7 @@
 
 ### January 8:
 - Initiated blank TypeScript Expo project
-- Followed a (tutorial)[https://www.youtube.com/watch?v=Hln37dE19bs&ab_channel=BenAwad] to set up the basic navigation for the app
+- Followed a [tutorial](https://www.youtube.com/watch?v=Hln37dE19bs&ab_channel=BenAwad) to set up the basic navigation for the app
   - Created a stack navigation for the `login` and `register` screens
   - Launch this stack on app loaded
   - Created a basic authorization provider to know which user is logged in to use on every screen
