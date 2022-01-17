@@ -1,6 +1,5 @@
-import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { createStackNavigator } from "@react-navigation/stack";
 import { ListingDetails } from "../listing/ListingDetails";
 import { Feed } from "./Feed";
 
@@ -16,6 +15,3 @@ export const HomeStack: React.FC<HomeStackProps> = ({}) => {
     </Stack.Navigator>
   );
 };
-const styles = StyleSheet.create({
-  container: {},
-});

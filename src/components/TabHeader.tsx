@@ -1,5 +1,5 @@
-import { useRoute } from "@react-navigation/native";
 import React from "react";
+import { useRoute } from "@react-navigation/native";
 import { View, Text, StyleSheet, Image } from "react-native";
 import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 import { colors } from "../../assets/colors";
