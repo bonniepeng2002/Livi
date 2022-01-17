@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
-import { AuthNavProps } from "../structure/AuthParamList";
-import { AuthContext } from "../structure/AuthProvider";
+import { AuthNavProps } from "../../structure/AuthParamList";
+import { AuthContext } from "../../structure/AuthProvider";
 
 interface LoginProps extends AuthNavProps<"Login"> {}
 

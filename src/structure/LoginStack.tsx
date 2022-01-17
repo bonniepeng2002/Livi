@@ -1,7 +1,6 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import { Login } from "../screens/Login";
-import { Register } from "../screens/Register";
+import { Login } from "../screens/auth/Login";
+import { Register } from "../screens/auth/Register";
 import { AuthParamList } from "./AuthParamList";
 import { createStackNavigator } from "@react-navigation/stack";
 
@@ -22,6 +21,3 @@ export const LoginStack: React.FC<LoginStackProps> = ({}) => {
     </Stack.Navigator>
   );
 };
-const styles = StyleSheet.create({
-  container: {},
-});

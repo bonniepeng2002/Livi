@@ -25,6 +25,7 @@ export const TabHeader: React.FC<TabHeaderProps> = ({ navigate }) => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.teal,

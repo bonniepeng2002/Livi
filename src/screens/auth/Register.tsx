@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
-import { AuthNavProps } from "../structure/AuthParamList";
+import { AuthNavProps } from "../../structure/AuthParamList";
 
 interface RegisterProps extends AuthNavProps<"Register"> {}
 

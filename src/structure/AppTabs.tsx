@@ -53,7 +53,6 @@ export const AppTabs: React.FC<AppTabsProps> = () => {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, size, color }) => {
           const iconName: IconName = getIconName(route.name, focused);
-
           return <Ionicons name={iconName} size={size} color={color} />;
         },
         tabBarActiveTintColor: colors.teal,
