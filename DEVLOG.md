@@ -19,3 +19,18 @@
 - Added bottom tab navigation screens
 - Created custom header for bottom tab screens
 - Created a navigation stack for the home tab, showing the feed and then listing details
+
+## 🧠 Everything I'm Learning:
+- React Native
+  - useContext
+  - Auth Providers
+  - Async Storage
+- React Navigation
+  - Stack Navigation (navigators and screens, customization)
+  - Bottom Tab Navigation
+  - Headers
+  - Routes
+- Expo
+  - Running an Expo app
+  - Expo vectors
+- TypeScript
