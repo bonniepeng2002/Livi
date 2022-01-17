@@ -30,6 +30,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
           AsyncStorage.setItem("user", JSON.stringify(fakeUser)); // should change this to something more secure
         },
         logout: () => {
+          setUser(null)
           AsyncStorage.removeItem("user");
         },
       }}

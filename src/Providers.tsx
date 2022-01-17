@@ -1,6 +1,6 @@
 import React from "react";
-import { AuthProvider } from "./AuthProvider";
-import { Routes } from "./Routes";
+import { AuthProvider } from "./structure/AuthProvider";
+import { Routes } from "./structure/Routes";
 
 interface ProvidersProps {}
 
