@@ -20,6 +20,20 @@
 - Created custom header for bottom tab screens
 - Created a navigation stack for the home tab, showing the feed and then listing details
 
+### January 24:
+- Created a stack navigation for messages screen, removed stack navigator for home feed.
+- Process for creating a Stack Navigator in TS:
+  - Create file for the stack navigator
+    - create a stack navigator object
+    - create a functional component that returns the stack navigator, with the necessary stack screens nested inside
+    - this file contains the "directions" for the stack - ie. what component to render for each screen
+  - Create a file for the types, for each screen in the stack
+    - define a new type, a ParamList, that indicates that each screen's type is undefined
+    - then, since we need the navigation prop in each screen, create a NavProp type that can be customized with the name of the screen
+    - this is your types file, so you always have the navigation prop in your screen and you always have the screen name correct
+  - Create your screens to render
+  - Return the Stack Navigator in a parent file
+
 ## 🧠 Everything I'm Learning:
 - React Native
   - useContext

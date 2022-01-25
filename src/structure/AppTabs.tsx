@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { AppParamList } from "./AppParamList";
 import { AddListing } from "../screens/listing/AddListing";
 import { Home } from "../screens/home/Home";
-import { Messages } from "../screens/tabs/Messages";
+import { Messages } from "../screens/messages/Messages";
 import { Profile } from "../screens/tabs/Profile";
 import { Settings } from "../screens/tabs/Settings";
 import { Ionicons } from "@expo/vector-icons";
