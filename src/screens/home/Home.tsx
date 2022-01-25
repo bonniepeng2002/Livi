@@ -1,8 +1,8 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { HomeStack } from "./HomeStack";
 
 interface HomeProps {}
 
 export const Home: React.FC<HomeProps> = ({}) => {
-  return <View><Text>This is the home</Text></View>;
+  return <HomeStack />;
 };

@@ -24,30 +24,30 @@ type IconName =
 
 const Tabs = createBottomTabNavigator<AppParamList>();
 
-export const AppTabs: React.FC<AppTabsProps> = () => {
-  const getIconName = (name: string, focused: boolean) => {
-    switch (name) {
-      case "Home": {
-        return focused ? "home-sharp" : "home-outline";
-      }
-      case "Profile": {
-        return focused ? "person" : "person-outline";
-      }
-      case "Add a Listing": {
-        return "add";
-      }
-      case "Messages": {
-        return focused ? "chatbubble-sharp" : "chatbubble-outline";
-      }
-      case "Settings": {
-        return focused ? "settings" : "settings-outline";
-      }
-      default: {
-        return focused ? "home-sharp" : "home-outline";
-      }
+const getIconName = (name: string, focused: boolean) => {
+  switch (name) {
+    case "Home": {
+      return focused ? "home-sharp" : "home-outline";
     }
-  };
+    case "Profile": {
+      return focused ? "person" : "person-outline";
+    }
+    case "Add a Listing": {
+      return "add";
+    }
+    case "Messages": {
+      return focused ? "chatbubble-sharp" : "chatbubble-outline";
+    }
+    case "Settings": {
+      return focused ? "settings" : "settings-outline";
+    }
+    default: {
+      return focused ? "home-sharp" : "home-outline";
+    }
+  }
+};
 
+export const AppTabs: React.FC<AppTabsProps> = () => {
   return (
     <Tabs.Navigator
       screenOptions={({ route }) => ({
@@ -57,9 +57,7 @@ export const AppTabs: React.FC<AppTabsProps> = () => {
         },
         tabBarActiveTintColor: colors.teal,
         tabBarInactiveTintColor: colors.grey,
-        header: ({ navigation }) => (
-          <TabHeader navigate={navigation.navigate} />
-        ),
+        header: () => null,
       })}
     >
       <Tabs.Screen name="Home" component={Home} />

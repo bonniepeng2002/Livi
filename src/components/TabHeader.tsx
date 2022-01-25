@@ -1,27 +1,39 @@
 import React from "react";
 import { useRoute } from "@react-navigation/native";
 import { View, Text, StyleSheet, Image } from "react-native";
-import { TouchableWithoutFeedback } from "react-native-gesture-handler";
+import { TouchableOpacity } from "react-native-gesture-handler";
 import { colors } from "../../assets/colors";
 
 interface TabHeaderProps {
-  navigate: (x: string) => void;
+  navigate?: (x: string) => void;
 }
 
-export const TabHeader: React.FC<TabHeaderProps> = ({ navigate }) => {
+export const TabHeader: React.FC<TabHeaderProps> = ({
+  navigate = () => {},
+}) => {
   const route = useRoute();
+
+  const HeaderBtn = (destination: string, pathToIcon: string = "") => {
+    return (
+      <TouchableOpacity onPress={() => navigate(destination)}>
+        <Image
+          source={require("../../assets/favicon.png")}
+          width={5}
+          height={5}
+        />
+      </TouchableOpacity>
+    );
+  };
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{route.name}</Text>
-      {route.name === "Home" && (
-        <TouchableWithoutFeedback onPress={() => navigate("Profile")}>
-          <Image
-            source={require("../../assets/favicon.png")}
-            width={5}
-            height={5}
-          />
-        </TouchableWithoutFeedback>
-      )}
+      <Text style={styles.title}>
+        {route.name === "Feed" ? "Hi, " : route.name}
+      </Text>
+
+      {route.name === "Feed" && HeaderBtn("Profile")}
+      {/* change the below to the other person's profile */}
+      {route.name === "Message" && HeaderBtn("Profile")}
     </View>
   );
 };

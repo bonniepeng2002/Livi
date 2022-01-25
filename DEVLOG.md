@@ -5,6 +5,7 @@
 ## :books: Development Log:
 
 ### January 8:
+
 - Initiated blank TypeScript Expo project
 - Followed a [tutorial](https://www.youtube.com/watch?v=Hln37dE19bs&ab_channel=BenAwad) to set up the basic navigation for the app
   - Created a stack navigation for the `login` and `register` screens
@@ -13,6 +14,7 @@
 - Created a custom TypeScript functional component snippet
 
 ### January 16:
+
 - Display loading screen while seeing if a user is logged in
   - if a user is logged in, stop loading and display the main app
   - is a user does not exist, stop loading and display login/register screen
@@ -21,8 +23,14 @@
 - Created a navigation stack for the home tab, showing the feed and then listing details
 
 ### January 24:
+
 - Created a stack navigation for messages screen, removed stack navigator for home feed.
-- Process for creating a Stack Navigator in TS:
+- Create Listing Detail page, link it to one of the items in the list on the feed such that when the list item is clicked, we are taken to a new screen
+  - linked through passing in the name through the route's props.. do be changed when real data is present
+- READDED IN Home Stack Navigator... realized I needed it afterall :/
+- Changed AppTabs to not show header, and made the tabs show a custom header themselves
+
+Process for creating a Stack Navigator in TS:
   - Create file for the stack navigator
     - create a stack navigator object
     - create a functional component that returns the stack navigator, with the necessary stack screens nested inside
@@ -34,7 +42,14 @@
   - Create your screens to render
   - Return the Stack Navigator in a parent file
 
+### Next Up:
+
+- make components
+- learn how to make modals
+- add real data into feed list
+
 ## 🧠 Everything I'm Learning:
+
 - React Native
   - useContext
   - Auth Providers
