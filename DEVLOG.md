@@ -26,7 +26,7 @@
 
 - Created a stack navigation for messages screen, removed stack navigator for home feed.
 - Create Listing Detail page, link it to one of the items in the list on the feed such that when the list item is clicked, we are taken to a new screen
-  - linked through passing in the name through the route's props.. do be changed when real data is present
+  - linked through passing in the name through the route's props.. to be changed when real data is present
 - READDED IN Home Stack Navigator... realized I needed it afterall :/
 - Changed AppTabs to not show header, and made the tabs show a custom header themselves
 
@@ -42,13 +42,19 @@ Process for creating a Stack Navigator in TS:
   - Create your screens to render
   - Return the Stack Navigator in a parent file
 
+### January 30:
+
+- Created the Button component, with primary and secondary buttons
+- Created ListingCard component, with optional appearance of edit button
+  - On click, brings you to the listing details page for the listing
+  
 ### Next Up:
 
 - make components
 - learn how to make modals
 - add real data into feed list
 
-## 🧠 Everything I'm Learning:
+## 🧠 What I'm Learning:
 
 - React Native
   - useContext

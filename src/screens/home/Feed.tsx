@@ -1,18 +1,20 @@
 import React from "react";
-import { View, Text, StyleSheet, Button, FlatList } from "react-native";
+import { View, Text, StyleSheet, FlatList } from "react-native";
+import { Button } from "../../components/Button";
+import { ListingCard } from "../../components/ListingCard";
 import { HomeNavProp } from "./HomeParamList";
 
 interface FeedProps extends HomeNavProp<"Feed"> {}
 
 export const Feed: React.FC<FeedProps> = ({ navigation }) => {
   return (
-    <View>
+    <View style={styles.container}>
+      <Button title="button" onPress={() => {}} type="main" />
+      <Text></Text>
+      <Button title="button" onPress={() => {}} type="secondary" />
       <View>
-        <Text>This is the home</Text>
-
-        {/* temporary list to test */}
         <FlatList
-          style={styles.list}
+          contentContainerStyle={styles.list}
           data={[
             "Hello",
             "Goodbye",
@@ -24,26 +26,12 @@ export const Feed: React.FC<FeedProps> = ({ navigation }) => {
             "Goodbye",
             "Lol",
             "Hello",
-            "Goodbye",
-            "Lol",
-            "Hello",
-            "Goodbye",
-            "Lol",
-            "Hello",
-            "Goodbye",
-            "Lol",
-            "Hello",
-            "Goodbye",
-            "Lol",
           ]}
           keyExtractor={(string) => string}
           renderItem={({ item }) => (
-            <Button
-              title={item}
-              onPress={() =>
-                navigation.navigate("ListingDetails", { title: item })
-              }
-            />
+            <View style={styles.listItem}>
+              <ListingCard navigation={navigation} />
+            </View>
           )}
         />
       </View>
@@ -52,7 +40,15 @@ export const Feed: React.FC<FeedProps> = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+  },
   list: {
     width: "100%",
+    paddingTop: 8,
+  },
+  listItem: {
+    marginBottom: 8,
   },
 });
