@@ -32,7 +32,7 @@ export const Feed: React.FC<FeedProps> = ({ navigation }) => {
           keyExtractor={(string) => string}
           renderItem={({ item }) => (
             <View style={styles.listItem}>
-              <ListingCard navigation={navigation} />
+              {/* <ListingCard navigation={navigation} /> */}
             </View>
           )}
         />
