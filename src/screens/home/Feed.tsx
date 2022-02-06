@@ -12,19 +12,25 @@ export const Feed: React.FC<FeedProps> = ({ navigation }) => {
       <Text>This is the home</Text>
 
       <Button title="Hello" onPress={() => {}} />
-
-      {/* temporary list to test */}
-      <FlatList
-        style={styles.list}
-        data={["Hello", "Goodbye", "Lol"]}
-        keyExtractor={(string) => string}
-        renderItem={({ item }) => (
-          <View style={styles.listItem}>
-            <ListingCard navigation={navigation} />
-          </View>
-        )}
-      />
-    </View>
+      <Text></Text>
+      <Button title="button" onPress={() => {}} type="secondary" />
+      <TextInput title="hello" />
+      <View>
+        <FlatList
+          contentContainerStyle={styles.list}
+          data={[
+            "Hello",
+            "Goodbye",
+            "Lol",
+          ]}
+          keyExtractor={(string) => string}
+          renderItem={({ item }) => (
+            <View style={styles.listItem}>
+              <ListingCard navigation={navigation} />
+            </View>
+          )}
+        />
+      </View>
   );
 };
 
@@ -35,6 +41,10 @@ const styles = StyleSheet.create({
   },
   list: {
     width: "100%",
+    paddingTop: 8,
+  },
+  listItem: {
+    marginBottom: 8,
   },
   listItem: {
     marginBottom: 8,
