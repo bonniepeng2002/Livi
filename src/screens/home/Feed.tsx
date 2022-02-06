@@ -12,18 +12,20 @@ export const Feed: React.FC<FeedProps> = ({ navigation }) => {
       <Text>This is the home</Text>
 
       <Button title="Hello" onPress={() => {}} />
-
-      {/* temporary list to test */}
-      <FlatList
-        style={styles.list}
-        data={["Hello", "Goodbye", "Lol"]}
-        keyExtractor={(string) => string}
-        renderItem={({ item }) => (
-          <View style={styles.listItem}>
-            <ListingCard navigation={navigation} />
-          </View>
-        )}
-      />
+      <Text></Text>
+      <Button title="button" onPress={() => {}} type="secondary" />
+      <View>
+        <FlatList
+          contentContainerStyle={styles.list}
+          data={["Hello", "Goodbye", "Lol"]}
+          keyExtractor={(string) => string}
+          renderItem={({ item }) => (
+            <View style={styles.listItem}>
+              <ListingCard navigation={navigation} />
+            </View>
+          )}
+        />
+      </View>
     </View>
   );
 };
