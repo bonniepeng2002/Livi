@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { Text, StyleSheet } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { colors } from "../../assets/colors";
 
@@ -29,6 +29,7 @@ export const Button: React.FC<ButtonProps> = ({
     </TouchableOpacity>
   );
 };
+
 const styles = StyleSheet.create({
   containerMain: {
     borderRadius: 10,

@@ -48,6 +48,10 @@ Process for creating a Stack Navigator in TS:
 - Created ListingCard component, with optional appearance of edit button
   - On click, brings you to the listing details page for the listing
 
+### February 5:
+- Fixed a horrible, confusing bug by reverting to an old commit, and recreating the necessary files
+- Created TextInput component
+
 ### Next Up:
 
 - make components
