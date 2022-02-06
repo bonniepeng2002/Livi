@@ -8,7 +8,6 @@ import { Profile } from "../screens/tabs/Profile";
 import { Settings } from "../screens/tabs/Settings";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../../assets/colors";
-import { TabHeader } from "../components/TabHeader";
 
 interface AppTabsProps {}
 type IconName =

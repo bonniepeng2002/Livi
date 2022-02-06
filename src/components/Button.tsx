@@ -4,14 +4,14 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import { colors } from "../../assets/colors";
 
 interface ButtonProps {
-  type: "main" | "secondary";
+  type?: "main" | "secondary";
   title: string;
   onPress: () => void;
   disabled?: boolean;
 }
 
 export const Button: React.FC<ButtonProps> = ({
-  type,
+  type = "main",
   title,
   onPress,
   disabled,

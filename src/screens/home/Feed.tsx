@@ -2,7 +2,6 @@ import React from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native";
 import { Button } from "../../components/Button";
 import { ListingCard } from "../../components/ListingCard";
-import { TextInput } from "../../components/TextInput";
 import { HomeNavProp } from "./HomeParamList";
 
 interface FeedProps extends HomeNavProp<"Feed"> {}
@@ -10,7 +9,9 @@ interface FeedProps extends HomeNavProp<"Feed"> {}
 export const Feed: React.FC<FeedProps> = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Button title="button" onPress={() => {}} type="main" />
+      <Text>This is the home</Text>
+
+      <Button title="Hello" onPress={() => {}} />
       <Text></Text>
       <Button title="button" onPress={() => {}} type="secondary" />
       <TextInput title="hello" />
@@ -21,23 +22,15 @@ export const Feed: React.FC<FeedProps> = ({ navigation }) => {
             "Hello",
             "Goodbye",
             "Lol",
-            "Hello",
-            "Goodbye",
-            "Lol",
-            "Hello",
-            "Goodbye",
-            "Lol",
-            "Hello",
           ]}
           keyExtractor={(string) => string}
           renderItem={({ item }) => (
             <View style={styles.listItem}>
-              {/* <ListingCard navigation={navigation} /> */}
+              <ListingCard navigation={navigation} />
             </View>
           )}
         />
       </View>
-    </View>
   );
 };
 
@@ -49,6 +42,9 @@ const styles = StyleSheet.create({
   list: {
     width: "100%",
     paddingTop: 8,
+  },
+  listItem: {
+    marginBottom: 8,
   },
   listItem: {
     marginBottom: 8,
