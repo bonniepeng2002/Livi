@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native";
 import { Button } from "../../components/Button";
 import { ListingCard } from "../../components/ListingCard";
+import { TextInput } from "../../components/TextInput";
 import { HomeNavProp } from "./HomeParamList";
 
 interface FeedProps extends HomeNavProp<"Feed"> {}
@@ -12,6 +13,7 @@ export const Feed: React.FC<FeedProps> = ({ navigation }) => {
       <Button title="button" onPress={() => {}} type="main" />
       <Text></Text>
       <Button title="button" onPress={() => {}} type="secondary" />
+      <TextInput title="hello" />
       <View>
         <FlatList
           contentContainerStyle={styles.list}

@@ -7,13 +7,21 @@ interface ButtonProps {
   type: "main" | "secondary";
   title: string;
   onPress: () => void;
+  disabled?: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({ type, title, onPress }) => {
+export const Button: React.FC<ButtonProps> = ({
+  type,
+  title,
+  onPress,
+  disabled,
+}) => {
   return (
     <TouchableOpacity
       style={type === "main" ? styles.containerMain : styles.containerSecondary}
-      onPress={() => onPress()}
+      onPress={() => {
+        !disabled ? onPress() : null;
+      }}
     >
       <Text style={type === "main" ? styles.titleMain : styles.titleSecondary}>
         {title}
