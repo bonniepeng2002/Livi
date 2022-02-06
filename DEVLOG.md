@@ -42,6 +42,12 @@ Process for creating a Stack Navigator in TS:
   - Create your screens to render
   - Return the Stack Navigator in a parent file
 
+### January 30:
+
+- Created the Button component, with primary and secondary buttons
+- Created ListingCard component, with optional appearance of edit button
+  - On click, brings you to the listing details page for the listing
+
 ### Next Up:
 
 - make components
