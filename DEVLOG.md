@@ -52,6 +52,13 @@ Process for creating a Stack Navigator in TS:
 - Fixed a horrible, confusing bug by reverting to an old commit, and recreating the necessary files
 - Created TextInput component
 
+### April 24:
+- Ah it's been a while... I love this project but I definitely don't have enough time :o
+- Made the listings screen look more like the designs
+- Created title component
+- Created dropdown
+- Created modal
+
 ### Next Up:
 
 - make components

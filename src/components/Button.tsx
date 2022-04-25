@@ -51,12 +51,12 @@ const styles = StyleSheet.create({
     color: "white",
     fontWeight: "700",
     textTransform: "uppercase",
-    fontSize: 20,
+    fontSize: 12,
   },
   titleSecondary: {
     color: colors.teal,
     fontWeight: "700",
     textTransform: "uppercase",
-    fontSize: 20,
+    fontSize: 12,
   },
 });

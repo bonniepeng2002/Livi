@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     borderColor: colors.darkGrey,
     borderWidth: 1,
     padding: 15,
+    backgroundColor: "white",
   },
   textContainer: {},
   image: {
